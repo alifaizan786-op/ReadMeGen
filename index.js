@@ -1,6 +1,13 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
+const parseString = (string) => {
+    let list = string.split(',');
+    let items = '';
+    list.forEach(item => {items+=`- ${item}\n`});
+    return items;
+}
+
 inquirer
   .prompt([
     {
@@ -12,11 +19,6 @@ inquirer
         type: 'input',
         message: 'What is the description of your project?',
         name: 'projectDesc',
-    },
-    {
-        type: 'input',
-        message: 'What is the "Table Of Content" of your project?',
-        name: 'projectTOC',
     },
     {
         type: 'input',
@@ -36,7 +38,7 @@ inquirer
     {
         type: 'input',
         message: 'Who helped you with this project?(name - githubURL, name - githubURL,)',
-        name: 'projectDesc',
+        name: 'projectCont',
     },
     {
         type: 'list',
@@ -59,10 +61,44 @@ inquirer
         message: "What's your email for contact?",
         name: 'email',
     },
+    {
+        type: 'input',
+        message: "What's the link to the image you would like to add to the readme?",
+        name: 'imgLink',
+    }
   ])
   .then(Response => {
     fs.writeFile('Readme.md',
     `
-    
+    # ${projectName}
+    ## Description
+    ${projectDesc}\n
+    Live Link: [${projectName}](https://github.com/${githubUserN}/${projectName})
+    ---
+    ## Table of Contents
+    - [Installation](#installation)
+    - [Usage](#usage)
+    - [Credits](#credits)
+    - [License](#license)
+    - [Questions](#questions)
+    ---
+    ## Installation
+    ${parseString(installation)}
+    ## Usage
+    ${projectUsage}\n
+    ![${imgLink}](${imgLink})
+    ## Tests
+    ${test}
+    ## Credits
+    ### People
+    ${parseString(projectCont)}
+    ### Resources
+    ${parseString(resources)}
+    ## License
+    ![${license}](https://img.shields.io/static/v1?label=license&message=${license}&color=brightgreen&style=plastic)
+    ## Questions
+    Github UN: ${githubUserN} - [${githubUserN}](https://github.com/${githubUserN})
+    You can contact me via email by emailing ${email} with your questions
+        
     `, (err) => err ? console.log(err) : console.log('Success!'));
 }) 

@@ -1,42 +1,38 @@
-# The ReadMe below was generated using this readme generator
-## ReadMe Generator
-### Description
-This ReadMe generator is a CLI based application, it is based off of node.js. It provide you with a very ellaborative readMe just by answering a few questions
 
-Live Link: [ReadMe Generator](https://github.com/alifaizan786-op/ReadMeGen)
+# Employee_Management_System
+## Description
+This is a CLI based Employee managment system
+
+Live Link: [Employee_Management_System](https://github.com/alifaizan786-op/Employee_Management_System)
+
+Video : [Tutorial](https://drive.google.com/file/d/1lqWpSElh4wDztR4G9go4tRhoFxK2jY66/view?usp=sharing)
 ---
-### Table of Contents
+## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
-- [Credits](#credits)
 - [License](#license)
 - [Questions](#questions)
 ---
-### Installation
-- clone the repo to your computer
--  run the command "npm i"
--  run the comand "index.js"
--  answer the prompts
--  copy the generated readme me to your repo
+## Installation
+- Clone Project
+- Install Packages
+- Run Main.js
 
-### Usage
-Used to create readme for your repo
+## Usage
+View All Employees, Department, Roles. Create Employess, Department, Roles
 
-![https://res.cloudinary.com/practicaldev/image/fetch/s--Yq5yTPVt--/c_imagga_scale,f_auto,fl_progressive,h_500,q_auto,w_1000/https://user-images.githubusercontent.com/9840435/59461914-cbc18380-8e22-11e9-8567-87b43da950ac.png](https://res.cloudinary.com/practicaldev/image/fetch/s--Yq5yTPVt--/c_imagga_scale,f_auto,fl_progressive,h_500,q_auto,w_1000/https://user-images.githubusercontent.com/9840435/59461914-cbc18380-8e22-11e9-8567-87b43da950ac.png)
-### Tests
+![../images/tutoral.gif](../images/tutoral.gif)
+## Tests
+All functionality is tested in tutorial video
 
-### Credits
-#### People
-- https://nodejs.org/en/docs/
--  https://developer.mozilla.org/en-US/
+### Resources
+- stackoverflow.com
 
-#### Resources
-- 
+## License
+![ISC](https://img.shields.io/static/v1?label=license&message=ISC&color=brightgreen&style=plastic)
 
-### License
-![Apache](https://img.shields.io/static/v1?label=license&message=Apache&color=brightgreen&style=plastic)
-### Questions
+## Questions
 Github UN: alifaizan786-op - [alifaizan786-op](https://github.com/alifaizan786-op)
 You can contact me via email by emailing faizan.ali@irunadigital.com with your questions
-        
+    
     
